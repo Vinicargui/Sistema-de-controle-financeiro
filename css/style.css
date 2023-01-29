@@ -9,24 +9,9 @@ body{
     background-color: black;
 }
 
-
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .form-despesas{
-    width: 30%;
-    height: 40%;
-    margin:100px auto ;
-    padding: 60px 30px;
-    border-radius: 30px;
-    box-sizing: border-box;
-}
-
-
-.form-despesas{
+    max-width: 40%;
+    height: 30%;
     display: flex;
     flex-direction:column;
     /* justify-content:center;
@@ -36,7 +21,24 @@ h1{
     
 }
 
+
 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-despesas{
+    
+    margin:100px auto ;
+    padding: 60px 30px;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+
+h1{
+    max-width: 100%;
     padding-bottom: 30px;
     color: aliceblue;
 }
@@ -45,10 +47,19 @@ button{
     margin-top: 60px;
 }
 
-input{
-    border: none;
-    border-radius: 3px;
-    margin-bottom: 10px;
+
+.pagamentos{
+    margin: 10px 0 10px 0;
+
+}
+
+.pagamentos label{
+    font-weight: bold;
+}
+
+.forma-pagamento{
+    max-width: 100%;
+    padding-top: 5px;
 }
 
 
@@ -60,11 +71,16 @@ input{
      .form-despesas{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
-       
-        
+    }
+
+    .form-despesas{
+        max-width: 80%;
+        height: 40%;
+         margin:100px auto ;
+        padding: 60px 30px;
+        border-radius: 30px;
+        box-sizing: border-box;
     }
     
 }
