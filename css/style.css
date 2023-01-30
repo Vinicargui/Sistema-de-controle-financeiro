@@ -1,12 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 .form-despesas{
@@ -17,8 +18,9 @@ body{
     /* justify-content:center;
     align-items:center; */
     flex-wrap:wrap;
-    background-color: aqua;
+    background-color: rgb(65, 66, 66);
     font-weight: bold;
+    color: white;
     
 }
 
@@ -96,6 +98,11 @@ input{
     justify-content: center;
     align-items:center;
     padding: 10px 10px 10px 10px;
+}
+
+div input{
+    max-width: 100%;
+    padding: 0 0 0 5px;
 }
 
 
