@@ -39,9 +39,12 @@ function App() {
 
 
   return (
-    <div className='App'>
+    <div className='container'>
+      <div className='classe-form'>
       <Form valores={handleInputChange}
         cadastrar={handleAdicionarPagamento} />
+        </div>
+        <div className='classe-card'>
       {
         listaPagamento.map((itemPagamento) => {
           return (
@@ -54,6 +57,7 @@ function App() {
           );
         })
       }
+      </div>
     </div>
 
   )

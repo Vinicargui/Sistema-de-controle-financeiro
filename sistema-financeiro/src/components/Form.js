@@ -8,7 +8,7 @@ function Formulario(props) {
             <div className="pagamentos">
                 <label for="">Forma de pagamento</label><br />
 
-                <select class="forma-pagamento"  name="pagamento" onChange={props.valores}>
+                <select class="forma-pagamento"   name="pagamento" onChange={props.valores} >
                     <option value="debito">Debito</option>
                     <option value="Credito">Credito</option>
                     <option value="dinheiro">Dinheiro</option>
@@ -16,7 +16,7 @@ function Formulario(props) {
             </div>
 
             <label for="">Valor</label>
-            <input type="text" name="valor" id="" onChange={props.valores} />
+            <input type="text" name="valor" id="" onChange={props.valores}/>
 
             <label for="">Data</label>
             <input type="date" name="data" onChange={props.valores} />

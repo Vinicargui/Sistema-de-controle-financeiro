@@ -10,13 +10,11 @@ body{
   background-color: white;
 }
 
-.form-despesas{
-  max-width: 25%;
-  height: 30%;
+ .form-despesas{
+   max-width: 100%;
   display: flex;
-  flex-direction:column;
-  /* justify-content:center;
-  align-items:center; */
+   justify-content:center;
+  align-items:center; 
   flex-wrap:wrap;
   background-color: rgb(65, 66, 66);
   font-weight: bold;
@@ -115,55 +113,62 @@ div input{
 
 
 .card{
-  width: 100%;
-  width: 300px;
-  height: 150px;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  max-width: 100%;
+
+  flex-wrap: wrap;
   background-color: rgb(236, 122, 50);
   border-radius: 5px;
   margin: 0 5px 5px 10px;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
 }
 
 .card label{
+  max-width: 100%;
+  display: flex;
   font-weight: bold;
   font-size: 12px;
+  padding: 0 10px 0 ;
+  
 }
 
-.card .titulo{
-  
+.card .titulo{  
   text-align: center ;
   font-size: 15px;
 }
 
-.container {
-  max-width: 30%;
-   display:flex;
-   justify-content: space-between;
-   flex-direction:row;
-  /* grid-template-columns: 1fr 1fr 1fr; */ 
 
-  
-  
+
+.container{
+ width:100%; 
+  background-color: aqua;
+  display:flex;
+  grid-template-rows: 50% 50%;
+
 }
 
+.container .classe-form{
+  max-width: 50%;
+  display: flex;
+}
 
+.container .classe-card{
+  max-width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 
+}
 
 
 
 @media screen and (max-width: 700px){
    .form-despesas{
       display: flex;
-      flex-direction: column;
+      flex-direction: row ;
       flex-wrap: wrap;
   }
 
   .form-despesas{
-      max-width: 80%;
-      height: 40%;
+      max-width: 100%;
        margin:100px auto ;
       padding: 60px 30px;
       border-radius: 30px;
