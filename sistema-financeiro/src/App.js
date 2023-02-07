@@ -10,7 +10,7 @@ function App() {
   const [inputs, setInputs] = useState({
     tipo: "",
     pagamento: "Debito",
-    valor: "",
+    valor: "", 
     data: "",
   });
 

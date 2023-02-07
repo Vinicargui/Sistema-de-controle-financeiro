@@ -1,6 +1,6 @@
 function Formulario(props) {
     return (
-        <div className="form-despesas">
+        <div className="form-despesas" required>
             <h1>Lançamento de despesas</h1>
             <label className="titulo" for="">Tipo</label>
             <input type="text" name="tipo" onChange={props.valores} />
@@ -19,7 +19,7 @@ function Formulario(props) {
             <input type="text" name="valor" id="" onChange={props.valores}/>
 
             <label for="">Data</label>
-            <input type="date" name="data" onChange={props.valores} />
+            <input class="inputdt" type="date" name="data" onChange={props.valores} />
 
             <div className="btn">
                 <button type="submit" onClick={props.cadastrar}>Cadastrar</button>
